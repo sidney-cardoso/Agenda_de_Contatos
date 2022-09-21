@@ -1,0 +1,64 @@
+$primary-color: #00a8ff;
+$text-color: #fff;
+$green: #0e7134;
+$blue-dark: #0972a6;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: 'Work Sans', sans-serif;
+    color: $text-color;
+    line-height: 1.5em;
+    .container {
+        max-width: 700px;
+        margin: 80px auto;
+        background-color: $blue-dark;
+        padding: 30px;
+        border-radius: 10px;
+    
+
+        h1 {
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            input,
+            label,
+            button {
+                display: block;
+                width: 100%;
+                height: 40px;
+                border-radius: 4px;
+                border: none;
+                margin: 20px 0;
+            }
+            input:focus {
+                outline: 2px solid #0e7134;
+            }
+            button {
+                background-color: $green;
+                color: $text-color;
+                font-weight: 700;
+                cursor: pointer;
+                opacity: 0.6;
+                transition: opacity 0.6s;
+            }
+            button:hover {
+                opacity: 1;
+            }
+            button:active {
+                background-color: $text-color;
+                color: $green;
+            }
+        }
+    }
+
+    
+}

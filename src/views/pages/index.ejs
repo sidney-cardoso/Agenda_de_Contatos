@@ -1,0 +1,12 @@
+<%- include('../partials/head') %>
+<section class="container">
+    <h1><%= csrfToken %></h1>
+    <form action="/" method="post">
+        <input type="hidden" name="_csrf" value="<%= csrfToken  %>" />
+        <label for="input">Cliente: </label>
+        <input type="text" name="client" id="input" />
+        <button>Enviar</button>
+    </form>
+</section>
+
+<%- include('../partials/footer') %>
