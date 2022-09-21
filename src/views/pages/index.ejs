@@ -1,12 +1,49 @@
 <%- include('../partials/head') %>
+<!--  -->
+<%- include('../partials/nav') %>
 <section class="container">
-    <h1><%= csrfToken %></h1>
-    <form action="/" method="post">
-        <input type="hidden" name="_csrf" value="<%= csrfToken  %>" />
-        <label for="input">Cliente: </label>
-        <input type="text" name="client" id="input" />
-        <button>Enviar</button>
-    </form>
-</section>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 my-3">
+            <h1 class="text-center">Agenda de contatos</h1>
+            <p class="text-center lead">Seus contatos estão abaixo</p>
 
+            <div class="row">
+                <div class="col my-3">
+                    <div class="alert alert-danger">Erro</div>
+                </div>
+            </div>
+            <div class="responsive-table">
+                <table class="table my-3">
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>11912345678</td>
+                        <td>meuemail@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>11912345678</td>
+                        <td>meuemail@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>11912345678</td>
+                        <td>meuemail@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>11912345678</td>
+                        <td>meuemail@email.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</section>
+<!--  -->
 <%- include('../partials/footer') %>
