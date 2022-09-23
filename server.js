@@ -23,9 +23,9 @@ const routes = require('./routes')
 const helmet = require('helmet')
 const csrf = require('csurf')
 const {
-    myMiddleware,
     checkCSRFError,
-    csrfMiddleware
+    csrfMiddleware,
+    globalMiddleware
 } = require('./src/middlewares/middleware')
 
 app.use(helmet())
@@ -51,7 +51,7 @@ app.set('views', path.resolve(__dirname, 'src', 'views', 'pages'))
 app.set('view engine', 'ejs')
 
 app.use(csrf())
-app.use(myMiddleware)
+app.use(globalMiddleware)
 app.use(checkCSRFError)
 app.use(csrfMiddleware)
 app.use(routes)
