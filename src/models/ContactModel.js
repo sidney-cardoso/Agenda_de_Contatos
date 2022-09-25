@@ -18,6 +18,11 @@ class Contact {
         this.errors = []
         this.contact = null
     }
+    static async searchID(id) {
+        if (typeof id !== 'string') return
+        const contact = await ContactModel.findById(id)
+        return contact
+    }
     async register() {
         this.validate()
         if (this.errors.length > 0) return
