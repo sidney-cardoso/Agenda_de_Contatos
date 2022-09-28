@@ -1,10 +1,10 @@
 {
-  "name": "seguraca_helmet_csfr",
+  "name": "agenda_de_contatos",
   "version": "1.0.0",
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js --ignore public --ignore frontend",
+    "start": "nodemon server.js --ignore dist --ignore frontend",
     "dev": "webpack -w"
   },
   "dependencies": {

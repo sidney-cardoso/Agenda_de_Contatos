@@ -11,10 +11,14 @@
             <%- include('../partials/messages') %>
 
             <div class="row">
-                <div class="col-lg">
+                <div class="col-lg my-5">
                     <h4>Cadastre-se</h4>
 
-                    <form action="/login/register" method="post">
+                    <form
+                        class="register-form"
+                        action="/login/register"
+                        method="post"
+                    >
                         <input
                             type="hidden"
                             name="_csrf"
@@ -42,9 +46,13 @@
                     </form>
                 </div>
 
-                <div class="col-lg">
+                <div class="col-lg my-5">
                     <h4>Faça login</h4>
-                    <form action="/login/login" method="post">
+                    <form
+                        class="login-form"
+                        action="/login/login"
+                        method="post"
+                    >
                         <input
                             type="hidden"
                             name="_csrf"
