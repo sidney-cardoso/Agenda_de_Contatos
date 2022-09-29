@@ -20,7 +20,7 @@ const MongoStore = require('connect-mongo')
 const flashMessages = require('connect-flash')
 const path = require('path')
 const routes = require('./routes')
-// const helmet = require('helmet')
+const helmet = require('helmet')
 const csrf = require('csurf')
 const {
     checkCSRFError,
@@ -28,7 +28,7 @@ const {
     globalMiddleware
 } = require('./src/middlewares/middleware')
 
-// app.use(helmet())
+app.use(helmet())
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
