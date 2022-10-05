@@ -57,5 +57,5 @@ app.use(csrfMiddleware)
 app.use(routes)
 
 app.on('done', () => {
-    app.listen(process.env.PORT)
+    app.listen(process.env.PORT || 3000)
 })
