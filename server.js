@@ -57,5 +57,5 @@ app.use(csrfMiddleware)
 app.use(routes)
 
 app.on('done', () => {
-    app.listen(3000, () => console.log('Server is running on 3000'))
+    app.listen(process.env.PORT)
 })
